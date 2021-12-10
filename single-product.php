@@ -202,7 +202,7 @@ $single_product_query = mysqli_query($connection, $query);
       $comments_query = mysqli_query($connection, $query);
 
       while ($row = mysqli_fetch_assoc($comments_query)) {
-        $comment_id = $row['id'];
+        $comment_id = $row['comment_id'];
         $user_id = $row['user_id'];
         $product_id = $row['prodcut_id'];
         $comment_date = $row['comment_date'];
@@ -221,7 +221,7 @@ $single_product_query = mysqli_query($connection, $query);
               $comments_query = mysqli_query($connection, $query);
 
               while ($row = mysqli_fetch_assoc($comments_query)) {
-                $comment_id = $row['id'];
+                $comment_id = $row['comment_id'];
                 $user_id = $row['user_id'];
                 $product_id = $row['prodcut_id'];
                 $comment_date = $row['comment_date'];
